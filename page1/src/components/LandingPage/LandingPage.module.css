@@ -1,0 +1,206 @@
+.root {
+  position: relative;
+  width: 1440px;
+  height: 1112px;
+  align-items: flex-start;
+  background-color: #fff;
+}
+.hero {
+  position: absolute;
+  left: -4px;
+  top: -49px;
+  width: 1911.3236px;
+  height: 1161px;
+  overflow: visible;
+}
+.icon {
+  width: 100%;
+  height: 100%;
+}
+.body {
+  color: #505f98;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 113px;
+  right: 974px;
+  top: 357px;
+  height: min-content;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title {
+  color: #091133;
+  font-size: 50px;
+  line-height: 66px;
+  font-weight: 500;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 1px;
+  position: absolute;
+  left: 46px;
+  right: 855px;
+  top: 209px;
+  height: min-content;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+.elementCardInfoCardSmallIconPo {
+  position: absolute;
+  left: 121px;
+  right: 1063px;
+  top: 901px;
+  height: 36px;
+  align-items: flex-start;
+}
+.icon2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 36px;
+  height: 36px;
+  overflow: visible;
+}
+.icon3 {
+  width: 100%;
+  height: 100%;
+}
+.title2 {
+  position: absolute;
+  left: 51px;
+  right: -51px;
+  top: 5px;
+  height: min-content;
+  flex-direction: column;
+}
+.textBlock {
+  color: #091133;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock2 {
+  margin-top: 10px;
+  color: #091133;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.body2 {
+  color: #505f98;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 121px;
+  right: 1018px;
+  top: 945px;
+  height: min-content;
+  flex-direction: column;
+}
+.body3 {
+  color: #505f98;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 119px;
+  right: 1020px;
+  top: 586px;
+  height: min-content;
+  flex-direction: column;
+}
+.courseSpecificResources {
+  position: absolute;
+  left: 118px;
+  right: 1067px;
+  top: 543px;
+  height: 36px;
+  align-items: flex-start;
+}
+.icon4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 36px;
+  height: 36px;
+  overflow: visible;
+}
+.icon5 {
+  width: 100%;
+  height: 100%;
+}
+.title3 {
+  color: #091133;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 51px;
+  right: -51px;
+  top: 5px;
+  height: min-content;
+  flex-direction: column;
+}
+.icon6 {
+  position: absolute;
+  left: 119px;
+  top: 745px;
+  width: 36px;
+  height: 36px;
+  overflow: visible;
+}
+.icon7 {
+  width: 100%;
+  height: 100%;
+}
+.title4 {
+  position: absolute;
+  left: 174px;
+  right: 1011px;
+  top: 750px;
+  height: min-content;
+  flex-direction: column;
+}
+.textBlock3 {
+  color: #091133;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock4 {
+  margin-top: 10px;
+  color: #091133;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.body4 {
+  color: #505f98;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 121px;
+  right: 1018px;
+  top: 795px;
+  height: min-content;
+  flex-direction: column;
+}

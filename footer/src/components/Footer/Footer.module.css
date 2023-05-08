@@ -1,0 +1,167 @@
+.root {
+  position: relative;
+  width: 1440px;
+  height: 216px;
+  align-items: flex-start;
+  background-color: #fff;
+}
+.rectangle {
+  position: absolute;
+  left: 0;
+  right: -0.4861%;
+  top: 0;
+  bottom: 0;
+  background-color: #e7ecff;
+}
+.unnamed {
+  color: #939ea4;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 11.514%;
+  right: 79.205%;
+  top: calc(50% - 28px);
+  height: min-content;
+  flex-direction: column;
+  transform: translateY(-50%);
+}
+.home {
+  color: #929ecc;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 11.514%;
+  right: 85.8343%;
+  top: calc(50% - -64px);
+  height: min-content;
+  flex-direction: column;
+  transform: translateY(-50%);
+}
+.about {
+  color: #929ecc;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 18.3527%;
+  right: 78.9956%;
+  top: calc(50% - -64px);
+  height: min-content;
+  flex-direction: column;
+  transform: translateY(-50%);
+}
+.contact {
+  color: #929ecc;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 25.1913%;
+  right: 71.3894%;
+  top: calc(50% - -64px);
+  height: min-content;
+  flex-direction: column;
+  transform: translateY(-50%);
+}
+.iconSocialInstagram {
+  position: absolute;
+  left: 87.8556%;
+  right: 11.0279%;
+  top: 75.9259%;
+  bottom: 16.6667%;
+  overflow: visible;
+}
+.icon {
+  width: 100%;
+  height: 100%;
+}
+.iconSocialInstagramCopy {
+  position: absolute;
+  left: 84.6456%;
+  right: 14.2379%;
+  top: 75.9259%;
+  bottom: 16.6667%;
+  overflow: visible;
+}
+.icon2 {
+  width: 100%;
+  height: 100%;
+}
+.iconSocialInstagramCopy2 {
+  position: absolute;
+  left: 81.4356%;
+  right: 17.4479%;
+  top: 75.9259%;
+  bottom: 16.6667%;
+  overflow: visible;
+}
+.icon3 {
+  width: 100%;
+  height: 100%;
+}
+.iconSocialInstagramCopy3 {
+  position: absolute;
+  left: 78.2256%;
+  right: 20.6578%;
+  top: 75.9259%;
+  bottom: 16.6667%;
+  overflow: visible;
+}
+.icon4 {
+  width: 100%;
+  height: 100%;
+}
+.iconSocialInstagramCopy4 {
+  position: absolute;
+  left: 75.0157%;
+  right: 23.8678%;
+  top: 75.9259%;
+  bottom: 16.6667%;
+  overflow: visible;
+}
+.icon5 {
+  width: 100%;
+  height: 100%;
+}
+.rectangle2 {
+  position: absolute;
+  left: 11.514%;
+  right: 11.0279%;
+  top: 64.3519%;
+  bottom: 35.1852%;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: #cdd1d4;
+}
+.logoLandie {
+  position: absolute;
+  left: 685px;
+  top: 156px;
+  width: 79px;
+  height: 38px;
+  align-items: flex-start;
+}
+.landie {
+  color: #37447e;
+  font-size: 26px;
+  line-height: 38px;
+  font-weight: 900;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  right: -20.2532%;
+  top: 0;
+  bottom: 0;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
