@@ -4,6 +4,7 @@ import { Login } from './login';
 import { SignUp } from './signup';
 import resets from '../_resets.module.css';
 import classes from './Navbar.module.css';
+import { useNavigate } from 'react-router-dom';
 
 interface Props {
   className?: string;
@@ -12,6 +13,7 @@ interface Props {
 export const Navbar: FC<Props> = memo(function Navbar(props = {}) {
   const [showLogin, setShowLogin] = useState(false);
   const [showSignUp, setShowSignUp] = useState(false);
+  const navigate = useNavigate();
 
   const handleLoginClick = () => {
     setShowLogin(true);
@@ -21,6 +23,9 @@ export const Navbar: FC<Props> = memo(function Navbar(props = {}) {
     setShowSignUp(true);
   };
 
+  const handleHomeClick = () => {
+    navigate("/");
+  };
   return (
     <div className={`${resets.clapyResets} ${classes.root}`}>
       <div className={classes.rectangle}></div>
@@ -36,14 +41,14 @@ export const Navbar: FC<Props> = memo(function Navbar(props = {}) {
         <div className={classes.bG3}></div>
         <div className={classes.buttonLabel3}>Contact</div>
       </button>
-      <div className={classes.home}>
+      <button className={classes.home} onClick={handleHomeClick}>
         <div className={classes.bG4}></div>
         <div className={classes.buttonLabel4}>Home</div>
-      </div>
-      <div className={classes.about}>
+      </button>
+      <button className={classes.about}>
         <div className={classes.bG5}></div>
         <div className={classes.buttonLabel5}>About</div>
-      </div>
+      </button>
       <div className={classes.logoLandie}>
         <div className={classes.landie}>Home Page</div>
       </div>

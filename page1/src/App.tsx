@@ -1,6 +1,7 @@
 import { memo } from 'react';
 import type { FC } from 'react';
-
+import { BrowserRouter as Router} from 'react-router-dom';
+import { Routes ,Route } from 'react-router-dom';
 import classes from './App.module.css';
 import resets from './components/_resets.module.css';
 import { Navbar } from './components/Navbar/Navbar';
@@ -14,14 +15,18 @@ interface Props {
 }
 export const App: FC<Props> = memo(function App(props = {}) {
   return (
-    <div className={`${resets.clapyResets} ${classes.root}`}>
-      <div style={{ display: 'flex', flexDirection: 'column' }}>
-        <Navbar />
-        <LandingPage />
-        <Page2 />
-        <Page3 />
-        <Footer />
+    <Router>
+      <div className={`${resets.clapyResets} ${classes.root}`}>
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<LandingPage/>} />
+            <Route path="/page2" element={<Page2/>} />
+            <Route path="/page3" element={<Page3/>} />
+          </Routes>
+          <Footer />
+        </div>
       </div>
-    </div>
+    </Router>
   );
 });
