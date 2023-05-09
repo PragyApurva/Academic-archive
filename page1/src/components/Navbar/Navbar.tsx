@@ -1,22 +1,34 @@
-import { memo } from 'react';
+import { memo, useState } from 'react';
 import type { FC } from 'react';
-
+import { Login } from './login';
+import { SignUp } from './signup';
 import resets from '../_resets.module.css';
 import classes from './Navbar.module.css';
 
 interface Props {
   className?: string;
 }
-/* @figmaId 119:3134 */
+
 export const Navbar: FC<Props> = memo(function Navbar(props = {}) {
+  const [showLogin, setShowLogin] = useState(false);
+  const [showSignUp, setShowSignUp] = useState(false);
+
+  const handleLoginClick = () => {
+    setShowLogin(true);
+  };
+
+  const handleSignUpClick = () => {
+    setShowSignUp(true);
+  };
+
   return (
     <div className={`${resets.clapyResets} ${classes.root}`}>
       <div className={classes.rectangle}></div>
-      <button className={classes.signup_button}>
+      <button className={classes.signup_button} onClick={handleSignUpClick}>
         <div className={classes.bG}></div>
         <div className={classes.buttonLabel}>Sign up</div>
       </button>
-      <button className={classes.login_button}>
+      <button className={classes.login_button} onClick={handleLoginClick}>
         <div className={classes.bG2}></div>
         <div className={classes.buttonLabel2}>Login</div>
       </button>
@@ -35,6 +47,8 @@ export const Navbar: FC<Props> = memo(function Navbar(props = {}) {
       <div className={classes.logoLandie}>
         <div className={classes.landie}>Home Page</div>
       </div>
+      {showLogin && <Login onClose={() => setShowLogin(false)} />}
+      {showSignUp && <SignUp onClose={() => setShowSignUp(false)} />}
     </div>
   );
 });
