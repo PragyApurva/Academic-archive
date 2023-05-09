@@ -5,7 +5,7 @@ const fileController = require('../controllers/fileController');
 const router = express.Router();
 
 router.get('/', fileController.test);
-router.get('/:id', questionControllers.test2);
+// router.get('/:id', questionControllers.test2);
 // router.get('/paperMetadata', questionControllers.getQuestionPaperMetadata);
 
 module.exports = router;
