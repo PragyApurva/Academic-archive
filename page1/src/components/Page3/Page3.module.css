@@ -5,6 +5,7 @@
   align-items: flex-start;
   background-color: #fff;
 }
+
 .mask {
   position: absolute;
   left: -0.4861%;
@@ -13,19 +14,6 @@
   bottom: 33.4526%;
   outline: solid 0 #000;
   outline-offset: 0;
-}
-.rectangle1 {
-  position: absolute;
-  left: 779px;
-  top: 937.3516px;
-  width: 544px;
-  height: 42.297px;
-  outline: solid 1px #000;
-  outline-offset: -1px;
-  border-radius: 34px;
-  background-color: #d9d9d9;
-  box-shadow: 0px 4px 4px 0px #00000040;
-
 }
 .rectangle3 {
   position: absolute;
@@ -43,24 +31,11 @@
   font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     'Liberation Sans', sans-serif;
   position: absolute;
-  left: 687px;
-  right: 308px;
-  top: 659px;
+  left: 698px;
+  right: 297px;
+  top: 433px;
   height: min-content;
   flex-direction: column;
-}
-.rectangle4 {
-  position: absolute;
-  left: 687px;
-  top: 693px;
-  width: 558px;
-  height: 226px;
-  overflow: visible;
-  filter: drop-shadow(0px 4px 4px #00000040);
-}
-.icon {
-  width: 100%;
-  height: 100%;
 }
 .textBlockSectionLargeTitleBody {
   position: absolute;
@@ -101,146 +76,6 @@
   height: min-content;
   flex-direction: column;
 }
-.goals {
-  color: #091133;
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 500;
-  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
-  z-index: 0;
-  position: absolute;
-  left: 47px;
-  right: 238px;
-  top: 162px;
-  height: min-content;
-  flex-direction: column;
-}
-.IconSearchEngine {
-  z-index: 0;
-  position: absolute;
-  left: 15px;
-  top: 163px;
-  width: 22px;
-  height: 21px;
-  overflow: visible;
-}
-.icon2 {
-  width: 100%;
-  height: 100%;
-}
-.goals2 {
-  color: #091133;
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 500;
-  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
-  z-index: 0;
-  position: absolute;
-  left: 47px;
-  right: 238px;
-  top: 214px;
-  height: min-content;
-  flex-direction: column;
-}
-.IconSearchEngine2 {
-  z-index: 0;
-  position: absolute;
-  left: 15px;
-  top: 216px;
-  width: 22px;
-  height: 21px;
-  overflow: visible;
-}
-.icon3 {
-  width: 100%;
-  height: 100%;
-}
-.goals3 {
-  color: #091133;
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 500;
-  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
-  z-index: 0;
-  position: absolute;
-  left: 47px;
-  right: 238px;
-  top: 136px;
-  height: min-content;
-  flex-direction: column;
-}
-.IconSearchEngine3 {
-  z-index: 0;
-  position: absolute;
-  left: 15px;
-  top: 138px;
-  width: 22px;
-  height: 21px;
-  overflow: visible;
-}
-.icon4 {
-  width: 100%;
-  height: 100%;
-}
-.goals4 {
-  color: #091133;
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 500;
-  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
-  z-index: 0;
-  position: absolute;
-  left: 47px;
-  right: 238px;
-  top: 188px;
-  height: min-content;
-  flex-direction: column;
-}
-.IconSearchEngine4 {
-  z-index: 0;
-  position: absolute;
-  left: 15px;
-  top: 190px;
-  width: 22px;
-  height: 21px;
-  overflow: visible;
-}
-.icon5 {
-  width: 100%;
-  height: 100%;
-}
-.goals5 {
-  color: #091133;
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 500;
-  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
-  z-index: 0;
-  position: absolute;
-  left: 47px;
-  right: 238px;
-  top: 110px;
-  height: min-content;
-  flex-direction: column;
-}
-.IconSearchEngine5 {
-  z-index: 0;
-  position: absolute;
-  left: 15px;
-  top: 112px;
-  width: 22px;
-  height: 21px;
-  overflow: visible;
-}
-.icon6 {
-  width: 100%;
-  height: 100%;
-}
 .title2 {
   color: #091133;
   font-size: 36px;
@@ -250,359 +85,36 @@
     'Liberation Sans', sans-serif;
   z-index: 0;
   position: absolute;
-  left: 540px;
-  right: -509px;
-  top: 454px;
+  left: 551px;
+  right: -520px;
+  top: 228px;
   height: min-content;
   flex-direction: column;
 }
-.arrow1 {
-  position: absolute;
-  left: 499.7144px;
-  top: 325px;
-  width: 146px;
-  max-width: 100%;
-  height: 3px;
-  max-height: 100%;
-  overflow: visible;
-}
-.icon7 {
-  width: 100%;
-  height: 100%;
-}
+
 .rectangle1 {
   position: absolute;
-  left: 682px;
-  top: 251px;
+  left: 124px;
+  top: 259px;
   width: 558px;
-  height: 141px;
+  height: 63px;
   outline: solid 1px #000;
   outline-offset: -1px;
   border-radius: 25px;
   background-color: #f5f8ff;
   box-shadow: 0px 4px 4px 0px #00000040;
 }
-.textBlockSectionLargeTitleBody2 {
-  position: absolute;
-  left: 49.5139%;
-  right: 19.5833%;
-  top: 12.6118%;
-  bottom: 66.3495%;
-  align-items: flex-start;
-}
-.body3 {
-  color: #6f7cb2;
-  font-size: 16px;
-  line-height: 26px;
-  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
-  position: absolute;
-  left: -26px;
-  right: 26px;
-  top: 64px;
-  height: min-content;
-  flex-direction: column;
-}
-.title3 {
-  color: #091133;
-  font-size: 36px;
-  line-height: 48px;
-  font-weight: 500;
-  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
-  position: absolute;
-  left: -26px;
-  right: -38px;
-  top: 16px;
-  height: min-content;
-  flex-direction: column;
-}
-.rectangle2 {
-  position: absolute;
-  left: -14px;
-  top: 121px;
-  width: 379px;
-  height: 30.9796px;
-  outline: solid 1px #000;
-  outline-offset: -1px;
-  border-radius: 34px;
-  background-color: #ccd2e4;
-  box-shadow: 0px 4px 4px 0px #00000040;
-}
-.mA515FoundationsOfDataScience {
-  color: #374670;
-  font-size: 20px;
-  line-height: 18px;
-  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
-  position: absolute;
-  left: 0;
-  top: 128.4082px;
-  width: 458px;
-  height: 25.5918px;
-  flex-direction: column;
-}
-.rectangle22 {
-  position: absolute;
-  left: -14px;
-  top: 161px;
-  width: 408px;
-  height: 30.0408px;
-  outline: solid 1px #000;
-  outline-offset: -1px;
-  border-radius: 34px;
-  background-color: #ccd2e4;
-  box-shadow: 0px 4px 4px 0px #00000040;
-}
-.cS101DiscreteMathematicalStruc {
-  color: #374670;
-  font-size: 20px;
-  line-height: 18px;
-  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
-  position: absolute;
-  left: -3.2226px;
-  top: 168.1836px;
-  width: 369.5094px;
-  height: 24.8163px;
-  flex-direction: column;
-}
-.rectangle23 {
-  position: absolute;
-  left: -14px;
-  top: 200px;
-  width: 247px;
-  height: 30.0408px;
-  outline: solid 1px #000;
-  outline-offset: -1px;
-  border-radius: 34px;
-  background-color: #ccd2e4;
-  box-shadow: 0px 4px 4px 0px #00000040;
-}
-.cS201DataStructures {
-  color: #374670;
-  font-size: 20px;
-  line-height: 18px;
-  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
-  position: absolute;
-  left: -7.4755px;
-  top: 207.1836px;
-  width: 223.6981px;
-  height: 24.8163px;
-  flex-direction: column;
-}
-.IconCancel {
-  position: absolute;
-  left: 212px;
-  top: 211px;
-  width: 9px;
-  height: 11px;
-  overflow: visible;
-}
-.icon8 {
-  width: 100%;
-  height: 100%;
-}
-.IconCancel2 {
-  position: absolute;
-  left: 371px;
-  top: 170px;
-  width: 9px;
-  height: 11px;
-  overflow: visible;
-}
-.icon9 {
-  width: 100%;
-  height: 100%;
-}
-.IconCancel3 {
-  position: absolute;
-  left: 344px;
-  top: 130px;
-  width: 9px;
-  height: 11px;
-  overflow: visible;
-}
-.icon10 {
-  width: 100%;
-  height: 100%;
-}
-.IconSquare {
-  position: absolute;
-  left: 316px;
-  top: 403px;
-  width: 21px;
-  height: 20px;
-  overflow: visible;
-}
-.icon11 {
-  width: 100%;
-  height: 100%;
-}
-.arrow12 {
-  position: absolute;
-  left: 968.0173px;
-  top: 428px;
-  width: 3px;
-  max-width: 100%;
-  height: 115.0002px;
-  max-height: 100%;
-  overflow: visible;
-}
-.icon12 {
-  width: 100%;
-  height: 100%;
-}
 .IconSend {
   position: absolute;
-  left: 1185px;
-  top: 339px;
+  left: 631px;
+  top: 275px;
   width: 33.6369px;
   height: 30px;
   overflow: visible;
 }
-.icon13 {
+.icon {
   width: 100%;
   height: 100%;
-}
-.goals6 {
-  opacity: 0.2;
-  color: #091133;
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 500;
-  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
-  position: absolute;
-  left: 188px;
-  right: 997px;
-  top: 402px;
-  height: min-content;
-  flex-direction: column;
-}
-.IconPin {
-  position: absolute;
-  left: 318.7393px;
-  top: 406.4783px;
-  width: 15.5218px;
-  height: 13.9128px;
-  overflow: visible;
-}
-.icon14 {
-  width: 100%;
-  height: 100%;
-}
-.IconCheck {
-  position: absolute;
-  left: 158px;
-  top: 268px;
-  width: 21px;
-  height: 19px;
-  overflow: visible;
-}
-.icon15 {
-  width: 100%;
-  height: 100%;
-}
-.line3 {
-  position: absolute;
-  left: 184px;
-  top: 422px;
-  width: 122px;
-  max-width: 100%;
-  height: 0;
-  max-height: 100%;
-  border-bottom: solid 1px #000;
-  margin-bottom: -1px;
-  border-style: dashed;
-}
-.rectangle24 {
-  position: absolute;
-  left: 706px;
-  top: 711px;
-  width: 291px;
-  height: 47px;
-  outline: solid 1px #000;
-  outline-offset: -1px;
-  border-radius: 15px;
-  background-color: #d7e1ff;
-  box-shadow: 0px 4px 4px 0px #00000040;
-}
-.cS503MachineLearning {
-  color: #374670;
-  font-size: 20px;
-  line-height: 18px;
-  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
-  position: absolute;
-  left: 720px;
-  top: 722.2246px;
-  width: 458px;
-  height: 38.7755px;
-  flex-direction: column;
-}
-.IconArrowRightCircled {
-  position: absolute;
-  left: 956px;
-  top: 720px;
-  width: 31px;
-  height: 31px;
-  overflow: visible;
-}
-.icon16 {
-  width: 100%;
-  height: 100%;
-}
-.rectangle25 {
-  position: absolute;
-  left: 713px;
-  top: 856px;
-  width: 239px;
-  height: 47px;
-  outline: solid 1px #000;
-  outline-offset: -1px;
-  border-radius: 15px;
-  background-color: #d7e1ff;
-  box-shadow: 0px 4px 4px 0px #00000040;
-}
-.cS712TopicsInAI {
-  color: #374670;
-  font-size: 20px;
-  line-height: 18px;
-  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
-  position: absolute;
-  left: 720px;
-  top: 867px;
-  width: 483px;
-  height: 39px;
-  flex-direction: column;
-}
-.rectangle26 {
-  position: absolute;
-  left: 710px;
-  top: 782px;
-  width: 345px;
-  height: 51px;
-  outline: solid 1px #000;
-  outline-offset: -1px;
-  border-radius: 15px;
-  background-color: #d7e1ff;
-  box-shadow: 0px 4px 4px 0px #00000040;
-}
-.cS533ReinforcementLearning {
-  color: #374670;
-  font-size: 20px;
-  line-height: 18px;
-  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
-  position: absolute;
-  left: 724.089px;
-  top: 794.1225px;
-  width: 460.911px;
-  height: 41.8776px;
-  flex-direction: column;
 }
 .undraw_mobile_login_ikmvElemen {
   position: absolute;
@@ -612,31 +124,14 @@
   height: 742px;
   overflow: visible;
 }
-.icon17 {
+.icon2 {
   width: 100%;
   height: 100%;
 }
-.IconArrowRightCircled2 {
+.table {
   position: absolute;
-  left: 1014px;
-  top: 792px;
-  width: 31px;
-  height: 31px;
-  overflow: visible;
-}
-.icon18 {
-  width: 100%;
-  height: 100%;
-}
-.IconArrowRightCircled3 {
-  position: absolute;
-  left: 912px;
-  top: 862px;
-  width: 30px;
-  height: 30px;
-  overflow: visible;
-}
-.icon19 {
-  width: 100%;
-  height: 100%;
+  left: 710px;
+  top: 484px;
+  width: 526px;
+  height: 262px;
 }

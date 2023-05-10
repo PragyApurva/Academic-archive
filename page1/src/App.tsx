@@ -8,7 +8,7 @@ import { Navbar } from './components/Navbar/Navbar';
 import { LandingPage } from './components/LandingPage/LandingPage';
 import { Footer } from './components/Footer/Footer';
 import Page2  from './components/Page2/Page2';
-import { Page3 } from './components/Page3/Page3';
+import  Page3  from './components/Page3/Page3';
 import { Login } from './components/Navbar/login';
 
 interface Props {

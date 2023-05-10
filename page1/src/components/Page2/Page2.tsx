@@ -1,10 +1,7 @@
 import { memo, useState } from 'react';
 import type { FC } from 'react';
 import resets from '../_resets.module.css';
-import { ElementCardInfoCardSmallIconPo2 } from './ElementCardInfoCardSmallIconPo2';
-import { ElementCardInfoCardSmallIconPo3 } from './ElementCardInfoCardSmallIconPo3';
 import { IconSearchEngineIcon2 } from './IconSearchEngineIcon2';
-import search from './search';
 import classes from './Page2.module.css';
 import LiveSearch from './liveSearch';
 import Select,{ SingleValue } from 'react-select';
@@ -72,29 +69,32 @@ const Page2: FC<Props> = (props): JSX.Element => {
             <IconSearchEngineIcon2 className={classes.icon10} />
           </div>
         </button>
-
       </div>
       <div className={classes.table}></div>
       {show && <div className={classes.realAnalysisSession2022I}>
             <ul className={classes.list}>
               <li>
-                <div className={classes.textBlock10}>Real Analysis: Session : 2022-I</div>
+                <div className={classes.textBlock10}>: Session : 2022-II</div>
               </li>
               <li>
-              <table id="customers">
+              <table id="customers1">
                 <tr>
                   <th>Quiz 1</th>
-                  <th>midsem</th>
-                  <th>quiz 2</th>
-                  <th>endsem</th>
+                  <th>Midsem</th>
+                  <th>Quiz 2</th>
+                  <th>Endsem</th>
                 </tr>
                 <tr>
-                  <td>
-                  <a href="https://www..com/">Alfreds Futterkiste</a>
-                  </td>
-                  <td>Maria Anders</td>
-                  <td>Germany</td>
-                  <td>Germany</td>
+                  <td><a href="/CS101-Graph-Theory-Tutorial2.pdf" download="file.pdf">Quiz 1 question Paper</a></td>
+                  <td><a href="/CS 101 - Part C - Graph Theory - Tutorial 1.pdf" download="file.pdf">Midsem question Paper</a></td>
+                  <td><a href="/cs101_quiz2_sem2_2020_21.pdf" download="file.pdf">quiz 2 question Paper</a></td>
+                  <td><a href="/cs101_end_semester_examination_part_B.pdf" download="file.pdf">Endsem question Paper</a></td>
+                </tr>
+                <tr>
+                  <td><a href="/quiz2-solutions-questions-1-2-3-5-6-and-9.pdf" download="file.pdf">Quiz 1 Solution </a></td>
+                  <td><a href="/quiz2-solutions-questions-4-7-and-8.pdf" download="file.pdf">Midsem solution </a></td>
+                  <td><a href="/solutions_cs101_Sem2_2020_21_quiz1-all-questions.pdf" download="file.pdf">quiz 2 solution </a></td>
+                  <td><a href="/solutions_cs101_Sem2_2020_21_quiz1-question1.pdf" download="file.pdf">Endsem solution </a></td>
                 </tr>
               </table>
               </li>
