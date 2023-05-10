@@ -68,30 +68,37 @@ const Page3: FC<Props> = (props): JSX.Element => {
       {show && <div className={classes.realAnalysisSession2022I}>
             <ul className={classes.list}>
               <li>
-                <div className={classes.textBlock10}>: Session : 2022-II</div>
+                <div className={classes.textBlock10}></div>
               </li>
               <li>
               <table id="customers">
                 <tr>
                   <th>Recommended Course order</th>
+                  <th></th>
                 </tr>
                 <tr>
                   <td>MA202 Probablity and statistics</td>
+                  <td>3-0-0-6-3</td>
                 </tr>
                 <tr>
                   <td>CS201 Data Science and Algorithum</td>
+                  <td>3-1-2-6-4</td>
                 </tr>
                 <tr>
                   <td>MA515 foundations of data science</td>
+                  <td>3-0-2-7-4</td>
                 </tr>
                 <tr>
                   <td>CS503 Machine learning</td>
+                  <td>3-0-2-7-4</td>
                 </tr>
                 <tr>
                   <td>CS533 Reinforcement Learing</td>
+                  <td>2-0-4-6-4</td>
                 </tr>
                 <tr>
                   <td>CS612 Advanced Machine learning</td>
+                  <td>3-0-0-6-3</td>
                 </tr>
               </table>
               </li>
