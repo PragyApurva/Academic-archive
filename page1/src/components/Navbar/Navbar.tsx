@@ -16,10 +16,10 @@ export const Navbar: FC<Props> = memo(function Navbar(props = {}) {
   const navigate = useNavigate();
 
   const handleSignUpClick = () => {
-    navigate("/");
+    navigate("/login");
   };
   const handleLoginClick = () => {
-    navigate("/");
+    navigate("/login");
   };
   const handleHomeClick = () => {
     navigate("/");

@@ -9,6 +9,7 @@ import { LandingPage } from './components/LandingPage/LandingPage';
 import { Footer } from './components/Footer/Footer';
 import Page2  from './components/Page2/Page2';
 import { Page3 } from './components/Page3/Page3';
+import { Login } from './components/Navbar/login';
 
 interface Props {
   className?: string;
@@ -23,6 +24,7 @@ export const App: FC<Props> = memo(function App(props = {}) {
             <Route path="/" element={<LandingPage/>} />
             <Route path="/page2" element={<Page2/>} />
             <Route path="/page3" element={<Page3/>} />
+            <Route path="/login" element={<Login onClose={()=>{}}/>} />
           </Routes>
           <Footer />
         </div>

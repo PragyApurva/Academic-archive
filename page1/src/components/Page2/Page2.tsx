@@ -1,13 +1,15 @@
 import { memo, useState } from 'react';
 import type { FC } from 'react';
-
+import ReactLiveSearch from 'react-live-search'
 import resets from '../_resets.module.css';
 import { ElementCardInfoCardSmallIconPo2 } from './ElementCardInfoCardSmallIconPo2';
 import { ElementCardInfoCardSmallIconPo3 } from './ElementCardInfoCardSmallIconPo3';
 import { IconSearchEngineIcon2 } from './IconSearchEngineIcon2';
+import search from './search';
 import classes from './Page2.module.css';
 import LiveSearch from './liveSearch';
 import Select,{ SingleValue } from 'react-select';
+import "./page2.css"
 
 interface Props {
   className?: string;
@@ -43,6 +45,7 @@ const arr = [{
 // console.log(six.service_name)
 const Page2: FC<Props> = (props): JSX.Element => {
   const [results, setResults] = useState<{ id: string; name: string }[]>();
+  const [show,setShow] = useState<Boolean>(false)
   const [selectedProfile, setSelectedProfile] = useState<{
     id: string;
     name: string;
@@ -93,12 +96,19 @@ const Page2: FC<Props> = (props): JSX.Element => {
         <div className={classes.title3}>Course Resources</div>
         <div className={classes.rectangle12}>
         <LiveSearch
-      results={results}
-      value={selectedProfile?.name}
-      renderItem={(item) => <p>{item.name}</p>}
-      onChange={handleChange}
-      onSelect={(item) => setSelectedProfile(item)}
-    />
+          results={results}
+          value={selectedProfile?.name}
+          renderItem={(item) => <p>{item.name}</p>}
+          onChange={handleChange}
+          onSelect={(item) => setSelectedProfile(item)}
+          setShow={setShow}
+        />
+        {/* <ReactLiveSearch
+                value={value}
+                onChange={this.onChange}
+                onSelect={this.onSelect}
+                data={data}
+              /> */}
         </div>
         <div className={classes.realAnalysis2}>
         </div>
@@ -117,13 +127,71 @@ const Page2: FC<Props> = (props): JSX.Element => {
             <div className={classes.textBlock10}>Real Analysis: Session : 2022-I</div>
           </li>
           <li>
-            <div className={classes.textBlock11}>
-              <p></p>
-            </div>
+          <table id="customers">
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Berglunds snabbköp</td>
+    <td>Christina Berglund</td>
+    <td>Sweden</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Königlich Essen</td>
+    <td>Philip Cramer</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+  <tr>
+    <td>North/South</td>
+    <td>Simon Crowther</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Paris spécialités</td>
+    <td>Marie Bertrand</td>
+    <td>France</td>
+  </tr>
+</table>
           </li>
         </ul>
+        <div className={classes.textBlock11}>
+       </div>
       </div>
-      <div className={classes.frame1}></div>
+      <div className={classes.frame1}>
+
+      </div>
 
     </div>
   );

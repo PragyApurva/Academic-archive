@@ -6,6 +6,7 @@ interface Props<T> {
   onChange?: React.ChangeEventHandler;
   onSelect?: (item: T) => void;
   value?: string;
+  setShow?:any;
 }
 
 const LiveSearch = <T extends object>({
@@ -14,6 +15,7 @@ const LiveSearch = <T extends object>({
   value,
   onChange,
   onSelect,
+  setShow
 }: Props<T>): JSX.Element => {
   const [focusedIndex, setFocusedIndex] = useState(-1);
   const resultContainer = useRef<HTMLDivElement>(null);
@@ -84,23 +86,20 @@ const LiveSearch = <T extends object>({
 
   return (
     <div className="h-screen flex items-center justify-center">
-      <div
-        tabIndex={1}
-        onBlur={resetSearchComplete}
-        onKeyDown={handleKeyDown}
-        className="relative"
-      >
+      <div tabIndex={1} onBlur={resetSearchComplete} onKeyDown={handleKeyDown} className="relative"  style={{display:"flex",flexDirection:"column",transform:"translateY(-340px) translateX(100px)"}}>
         <input
           value={defaultValue}
           onChange={handleChange}
           type="text"
           className="w-[600px] px-5 py-3 text-lg rounded-full border-0 border-gray-0 focus:border-gray-700 outline-none transition"
           placeholder="Search your query..."
-        />
+        //   style={{ transform:"translateY(70px) "}}
 
+        />
         {/* Search Results Container */}
         {showResults && (
-          <div className="absolute mt-1 w-full p-2 bg-white shadow-lg rounded-bl rounded-br max-h-56 overflow-y-auto">
+          <div className="absolute mt-100 w-full pt-200 bg-white shadow-lg rounded-bl rounded-br max-h-56 overflow-y-auto
+          " style={{ display:"flex",flexDirection:"column",flexWrap:"wrap",transform:"translateY(-150) "}} >
             {results.map((item, index) => {
               return (
                 <div
@@ -112,6 +111,7 @@ const LiveSearch = <T extends object>({
                       index === focusedIndex ? "rgba(0,0,0,0.1)" : "",
                   }}
                   className="cursor-pointer hover:bg-black hover:bg-opacity-10 p-2"
+                  onClick={()=>setShow(true)}
                 >
                   {renderItem(item)}
                 </div>

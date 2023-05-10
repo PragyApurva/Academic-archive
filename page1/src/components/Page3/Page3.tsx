@@ -74,6 +74,7 @@ export const Page3: FC<Props> = memo(function Page3(props = {}) {
         <div className={classes.cS101DiscreteMathematicalStruc}>CS101 - Discrete Mathematical Structure</div>
         <div className={classes.rectangle23}></div>
         <div className={classes.cS201DataStructures}>CS201 - Data Structures</div>
+
         <div className={classes.IconCancel}>
           <IconCancelIcon className={classes.icon8} />
         </div>
@@ -110,6 +111,7 @@ export const Page3: FC<Props> = memo(function Page3(props = {}) {
       <div className={classes.cS712TopicsInAI}>CS712 Topics in AI</div>
       <div className={classes.rectangle26}></div>
       <div className={classes.cS533ReinforcementLearning}>CS533 - Reinforcement learning</div>
+
       <div className={classes.undraw_mobile_login_ikmvElemen}>
         <Undraw_mobile_login_ikmvElemen className={classes.icon17} />
       </div>
