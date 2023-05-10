@@ -14,9 +14,10 @@ export const Navbar: FC<Props> = memo(function Navbar(props = {}) {
   const [showLogin, setShowLogin] = useState(false);
   const [showSignUp, setShowSignUp] = useState(false);
   const navigate = useNavigate();
+  // const htmlContent = require('./login.html');
 
   const handleSignUpClick = () => {
-    navigate("/login");
+    navigate("/");
   };
   const handleLoginClick = () => {
     navigate("/login");
@@ -27,7 +28,7 @@ export const Navbar: FC<Props> = memo(function Navbar(props = {}) {
   return (
     <div className={`${resets.clapyResets} ${classes.root}`}>
       <div className={classes.rectangle}></div>
-      <button className={classes.signup_button} onClick={handleSignUpClick}>
+      <button className={classes.signup_button} onClick={handleLoginClick}>
         <div className={classes.bG}></div>
         <div className={classes.buttonLabel}>Sign up</div>
       </button>

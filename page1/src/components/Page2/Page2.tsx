@@ -1,6 +1,5 @@
 import { memo, useState } from 'react';
 import type { FC } from 'react';
-import ReactLiveSearch from 'react-live-search'
 import resets from '../_resets.module.css';
 import { ElementCardInfoCardSmallIconPo2 } from './ElementCardInfoCardSmallIconPo2';
 import { ElementCardInfoCardSmallIconPo3 } from './ElementCardInfoCardSmallIconPo3';
@@ -15,37 +14,23 @@ interface Props {
   className?: string;
 }
 const courses = [
-  { id: "1", name: "Allie Grater" },
-  { id: "2", name: "Aida Bugg" },
-  { id: "3", name: "Gabrielle" },
-  { id: "4", name: "Grace" },
-  { id: "5", name: "Hannah" },
-  { id: "6", name: "Heather" },
-  { id: "7", name: "John Doe" },
-  { id: "8", name: "Anne Teak" },
-  { id: "9", name: "Audie Yose" },
-  { id: "10", name: "Addie Minstra" },
-  { id: "11", name: "Anne Ortha" },
+  { id: "1", name: "CS543 - REINFORCEMENT LEARNING LAB" },
+  { id: "2", name: "CS533 - REINFORCEMENT LEARNING" },
+  { id: "3", name: "CS503 - MACHINE LEARNING " },
+  { id: "4", name: "MA303 - Computing Lab II" },
+  { id: "5", name: "MA302 - Optimization Methods with Applications" },
+  { id: "6", name: "HS301 - Industrial Management" },
+  { id: "7", name: "MA301 - Computational Algebra" },
+  { id: "8", name: "MA514 - Analysis and Design of Algorithms" },
+  { id: "9", name: "BM101A - Biology for Engineers" },
+  { id: "10", name: "MA515 - Foundations of Data Science" },
+  { id: "11", name: "GE111 - Introduction To Environmental Science And Engineering" },
 ];
 
-const arr = [{
-  "id": 2,
-  "service_name": "benny"
-  },{
-  "id": 5,
-  "service_name": "ready"
-  },{
-  "id": 6,
-  "service_name": "chitty"
-  },{
-  "id": 9,
-  "service_name": "robby"
-  }]
-// const six = arr.find(i => i.id === 6)
-// console.log(six.service_name)
 const Page2: FC<Props> = (props): JSX.Element => {
   const [results, setResults] = useState<{ id: string; name: string }[]>();
   const [show,setShow] = useState<Boolean>(false)
+  // const [show,setShow]=useState(false)
   const [selectedProfile, setSelectedProfile] = useState<{
     id: string;
     name: string;
@@ -66,31 +51,8 @@ const Page2: FC<Props> = (props): JSX.Element => {
       <div className={classes.elementCardInfoCardMediumIconT}>
       </div>
       <div className={classes.mask}></div>
-      <div className={classes.elementCardInfoCardMediumIconT2}>
-        <div className={classes.elementCardInfoCardSmallIconPo2}>
-          <div className={classes.icon6}>
-            <ElementCardInfoCardSmallIconPo2 className={classes.icon7} />
-          </div>
-          <div className={classes.title2}>Real Analysis</div>
-        </div>
-        <div className={classes.courseInstructorDrMPrabhakarSe}>
-          <div className={classes.textBlock4}>course instructor: Dr M Prabhakar</div>
-          <div className={classes.textBlock5}>session: 2021-I</div>
-          <div className={classes.textBlock6}>3-1-0-5-3</div>
-        </div>
-      </div>
-      <div className={classes.elementCardInfoCardMediumIconT3}>
-        <div className={classes.body3}>
-          <div className={classes.textBlock7}>course instructor: Dr M Prabhakar</div>
-          <div className={classes.textBlock8}>session: 2022-I</div>
-          <div className={classes.textBlock9}>3-1-0-5-3</div>
-        </div>
-        <div className={classes.elementCardInfoCardSmallIconPo3}>
-          <div className={classes.icon8}>
-            <ElementCardInfoCardSmallIconPo3 className={classes.icon9} />
-          </div>
-        </div>
-      </div>
+
+
       <div className={classes.textBlockSectionLargeTitleBody2}>
         <div className={classes.body4}>You can find research paper, question parer in one click</div>
         <div className={classes.title3}>Course Resources</div>
@@ -101,98 +63,47 @@ const Page2: FC<Props> = (props): JSX.Element => {
           renderItem={(item) => <p>{item.name}</p>}
           onChange={handleChange}
           onSelect={(item) => setSelectedProfile(item)}
-          setShow={setShow}
         />
-        {/* <ReactLiveSearch
-                value={value}
-                onChange={this.onChange}
-                onSelect={this.onSelect}
-                data={data}
-              /> */}
         </div>
         <div className={classes.realAnalysis2}>
         </div>
-        <div className={classes.IconSearchEngine2}>
-          <IconSearchEngineIcon2 className={classes.icon10} />
-        </div>
-        <div className={classes.title4}>Real Analysis</div>
-        {/* <div className={classes.arrow1}>
-          <Arrow1Icon className={classes.icon11} />
-        </div> */}
+        <button>
+          <div className={classes.IconSearchEngine2} onClick={()=>setShow(true)}>
+            <IconSearchEngineIcon2 className={classes.icon10} />
+          </div>
+        </button>
+
       </div>
       <div className={classes.table}></div>
-      <div className={classes.realAnalysisSession2022I}>
-        <ul className={classes.list}>
-          <li>
-            <div className={classes.textBlock10}>Real Analysis: Session : 2022-I</div>
-          </li>
-          <li>
-          <table id="customers">
-  <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Berglunds snabbköp</td>
-    <td>Christina Berglund</td>
-    <td>Sweden</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
-  <tr>
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-    <td>Austria</td>
-  </tr>
-  <tr>
-    <td>Island Trading</td>
-    <td>Helen Bennett</td>
-    <td>UK</td>
-  </tr>
-  <tr>
-    <td>Königlich Essen</td>
-    <td>Philip Cramer</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Laughing Bacchus Winecellars</td>
-    <td>Yoshi Tannamuri</td>
-    <td>Canada</td>
-  </tr>
-  <tr>
-    <td>Magazzini Alimentari Riuniti</td>
-    <td>Giovanni Rovelli</td>
-    <td>Italy</td>
-  </tr>
-  <tr>
-    <td>North/South</td>
-    <td>Simon Crowther</td>
-    <td>UK</td>
-  </tr>
-  <tr>
-    <td>Paris spécialités</td>
-    <td>Marie Bertrand</td>
-    <td>France</td>
-  </tr>
-</table>
-          </li>
-        </ul>
-        <div className={classes.textBlock11}>
-       </div>
-      </div>
+      {show && <div className={classes.realAnalysisSession2022I}>
+            <ul className={classes.list}>
+              <li>
+                <div className={classes.textBlock10}>Real Analysis: Session : 2022-I</div>
+              </li>
+              <li>
+              <table id="customers">
+                <tr>
+                  <th>Quiz 1</th>
+                  <th>midsem</th>
+                  <th>quiz 2</th>
+                  <th>endsem</th>
+                </tr>
+                <tr>
+                  <td>
+                  <a href="https://www..com/">Alfreds Futterkiste</a>
+                  </td>
+                  <td>Maria Anders</td>
+                  <td>Germany</td>
+                  <td>Germany</td>
+                </tr>
+              </table>
+              </li>
+            </ul>
+            <div className={classes.textBlock11}>
+          </div>
+      </div>}
       <div className={classes.frame1}>
-
       </div>
-
     </div>
   );
 };

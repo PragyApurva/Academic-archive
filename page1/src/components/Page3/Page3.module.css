@@ -14,6 +14,19 @@
   outline: solid 0 #000;
   outline-offset: 0;
 }
+.rectangle1 {
+  position: absolute;
+  left: 779px;
+  top: 937.3516px;
+  width: 544px;
+  height: 42.297px;
+  outline: solid 1px #000;
+  outline-offset: -1px;
+  border-radius: 34px;
+  background-color: #d9d9d9;
+  box-shadow: 0px 4px 4px 0px #00000040;
+
+}
 .rectangle3 {
   position: absolute;
   left: 0;

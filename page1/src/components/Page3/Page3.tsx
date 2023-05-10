@@ -22,28 +22,52 @@ import { IconSquareIcon } from './IconSquareIcon';
 import classes from './Page3.module.css';
 import { Rectangle4Icon } from './Rectangle4Icon';
 import { Undraw_mobile_login_ikmvElemen } from './Undraw_mobile_login_ikmvElemen';
+import LiveSearch from './liveSearch1';
 
 interface Props {
   className?: string;
 }
-/* @figmaId 119:3407 */
+const goals = [
+  { id: "1", name: "Quantitative Analyst" },
+  { id: "2", name: "MBA" },
+  { id: "3", name: "Software development" },
+  { id: "4", name: "Data science" },
+  { id: "5", name: "Research" },
+];
+// const Page2: FC<Props> = (props): JSX.Element => {
+//   const [results, setResults] = useState<{ id: string; name: string }[]>();
+//   const [show,setShow] = useState<Boolean>(false)
+//   // const [show,setShow]=useState(false)
+//   const [selectedProfile, setSelectedProfile] = useState<{
+//     id: string;
+//     name: string;
+//   }>();
 export const Page3: FC<Props> = memo(function Page3(props = {}) {
   return (
     <div className={`${resets.clapyResets} ${classes.root}`}>
       <div className={classes.mask}></div>
       <div className={classes.rectangle3}></div>
       <div className={classes.body}>Based on your goals and previous courses </div>
-      <div className={classes.rectangle4}>
+      {/* <div className={classes.rectangle4}>
         <Rectangle4Icon className={classes.icon} />
-      </div>
+      </div> */}
       <div className={classes.textBlockSectionLargeTitleBody}>
-        <div className={classes.body2}>Tick the goals for elective recommendations </div>
+        <div className={classes.body2}>Secect the goals for elective recommendations </div>
         <div className={classes.title}>Goals</div>
-        <div className={classes.goals}>Research</div>
+        
         <div className={classes.IconSearchEngine}>
           <IconSearchEngineIcon className={classes.icon2} />
         </div>
-        <div className={classes.goals2}>Quantitative Analyst</div>
+        <div className={classes.rectangle12}>
+        {/* <LiveSearch
+          results={results}
+          value={selectedProfile?.name}
+          renderItem={(item) => <p>{item.name}</p>}
+          onChange={handleChange}
+          onSelect={(item) => setSelectedProfile(item)}
+        /> */}
+        </div>
+        {/* <div className={classes.goals2}>Quantitative Analyst</div>
         <div className={classes.IconSearchEngine2}>
           <IconSearchEngineIcon2 className={classes.icon3} />
         </div>
@@ -58,7 +82,7 @@ export const Page3: FC<Props> = memo(function Page3(props = {}) {
         <div className={classes.goals5}>Data science</div>
         <div className={classes.IconSearchEngine5}>
           <IconSearchEngineIcon5 className={classes.icon6} />
-        </div>
+        </div> */}
         <div className={classes.title2}>Courses we recommend</div>
       </div>
       <div className={classes.arrow1}>
@@ -66,14 +90,14 @@ export const Page3: FC<Props> = memo(function Page3(props = {}) {
       </div>
       <div className={classes.rectangle1}></div>
       <div className={classes.textBlockSectionLargeTitleBody2}>
-        <div className={classes.body3}>Search for the Course You need help for</div>
-        <div className={classes.title3}>Course you have taken till now</div>
+        <div className={classes.body3}></div>
+        {/* <div className={classes.title3}>Course you have taken till now</div>
         <div className={classes.rectangle2}></div>
         <div className={classes.mA515FoundationsOfDataScience}>MA-515 Foundations of Data Science </div>
         <div className={classes.rectangle22}></div>
         <div className={classes.cS101DiscreteMathematicalStruc}>CS101 - Discrete Mathematical Structure</div>
         <div className={classes.rectangle23}></div>
-        <div className={classes.cS201DataStructures}>CS201 - Data Structures</div>
+        <div className={classes.cS201DataStructures}>CS201 - Data Structures</div> */}
 
         <div className={classes.IconCancel}>
           <IconCancelIcon className={classes.icon8} />
