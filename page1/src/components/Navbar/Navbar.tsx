@@ -15,14 +15,12 @@ export const Navbar: FC<Props> = memo(function Navbar(props = {}) {
   const [showSignUp, setShowSignUp] = useState(false);
   const navigate = useNavigate();
 
-  const handleLoginClick = () => {
-    setShowLogin(true);
-  };
-
   const handleSignUpClick = () => {
-    setShowSignUp(true);
+    navigate("/");
   };
-
+  const handleLoginClick = () => {
+    navigate("/");
+  };
   const handleHomeClick = () => {
     navigate("/");
   };

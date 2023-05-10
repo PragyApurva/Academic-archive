@@ -7,7 +7,7 @@ import resets from './components/_resets.module.css';
 import { Navbar } from './components/Navbar/Navbar';
 import { LandingPage } from './components/LandingPage/LandingPage';
 import { Footer } from './components/Footer/Footer';
-import { Page2 } from './components/Page2/Page2';
+import Page2  from './components/Page2/Page2';
 import { Page3 } from './components/Page3/Page3';
 
 interface Props {
